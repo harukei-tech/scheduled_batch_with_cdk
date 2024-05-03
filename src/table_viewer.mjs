@@ -1,5 +1,5 @@
-const AWS = require('@aws-sdk');
-const { TableViewer } = require('dynamodb-table-viewer');
+import AWS from '@aws-sdk';
+import { TableViewer } from 'dynamodb-table-viewer';
 
 exports.handler = async (event, context) => {
     try {
