@@ -1,4 +1,4 @@
-const AWS = require('aws-sdk');
+const AWS = require('@aws-sdk');
 const { TableViewer } = require('dynamodb-table-viewer');
 
 exports.handler = async (event, context) => {
