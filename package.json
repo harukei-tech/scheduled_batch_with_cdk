@@ -1,9 +1,7 @@
 {
   "name": "cdk-practice001",
   "version": "0.1.0",
-  "bin": {
-    "cdk-practice001": "bin/cdk-practice001.js"
-  },
+  "bin": "bin/cdk-practice001.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
@@ -13,13 +11,15 @@
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "20.12.7",
+    "aws-cdk": "2.140.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.2",
-    "aws-cdk": "2.140.0",
     "ts-node": "^10.9.2",
     "typescript": "~5.4.5"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.568.0",
+    "@aws-sdk/client-s3": "^3.568.0",
     "aws-cdk-lib": "2.140.0",
     "constructs": "^10.0.0"
   }
