@@ -19,6 +19,7 @@ export class Practice001PipelineStack extends cdk.Stack {
                 input: CodePipelineSource.codeCommit(repo, 'master'),
                 installCommands: ['npm install -g aws-cdk'],
                 commands: [
+                    'npm ci',
                     'npm run build',
                     'cdk synth'
                 ],
